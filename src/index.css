@@ -1,13 +1,278 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* *{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  font-family: jose;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_div {
+  width:100% ;
+  height: 100vh;
+  background: rgb(28, 200, 230);
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.center_div {
+  max-width: 50%;
+  height: 80vh;
+  background-color: rgb(226, 141, 215);
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  border-radius: 15px;
+  text-transform:uppercase;
+}
+
+h1{
+  color: white;
+  background: transparent;
+  background-color: #7d2ce0;
+  padding:  6px 0px 2px 0px;
+  margin-bottom:10px;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+
+
+}
+
+
+input{
+  text-align: center;
+  height: 30px;
+  top:10px;
+  border: none;
+  background:transparent;
+  font-size:20px;
+  font-weight:500;
+  width:60%;
+  border-bottom: 2px solid #8646d4;
+  outline:none;
+}
+
+button{
+  min-height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-color: #9a0ea7;
+  color:rgb(143, 6, 161);
+  font-size:40px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+}
+
+button:hover {
+  background-color: #20bf6b;
+
+}
+
+ol{
+  margin-top: 30px;
+}
+
+
+ol li{
+  padding-left: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-weight:500;
+  min-height:40px;
+  display:flex;
+  align-items: center;
+  color: #8566aa;
+  text-transform: capitalize;
+
+}
+
+
+.tot_style{
+  display:flex;
+  flex-direction:row;
+  justify-content: left;
+  align-items: center;
+}
+
+
+.todo_style .fa-times{
+  width: 20px;
+  height:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8566aa;
+  border-radius:50%;
+  margin: 0 15px 0 35px;
+  color: rgb(53, 137, 211);
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+
+}
+
+.todo_style .fa-times:hover{
+  background-color: crimson;
+}
+
+.todo_style .fa-times:hover .list-style{
+  color: crimson;
+}
+
+@media(max-width: 768px){
+  .center_div{
+    width: 55%;
+  }
+
+  .todo_style .fa-times{
+    margin: 0 15px 0 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button{
+    margin-left: 5px;
+    min-height: 40px;
+    width: 40px;
+    color:rgb(252, 249, 249);
+    font-size: 30px;
+  }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+
+.main_div {
+width: 100%;
+height: 100vh;
+background: #f08fd7;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.center_div {
+width: 25%;
+height: 70vh;
+background-color: #f4f4f4;
+box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+}
+
+h1 {
+color: rgba(0, 0, 0, 0.87);
+font-size: 50px;
+min-width: 64px;
+box-sizing: border-box;
+font-weight: 500;
+border-radius: 4px;
+letter-spacing: 0.02857em;
+text-transform: uppercase;
+font-family: 'Patua One', cursive;
+margin-bottom: 30px;
+text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+input {
+text-align: center;
+height: 30px;
+border: none;
+background: transparent;
+font-size: 20px;
+font-family: "Josefin Sans", sans-serif;
+font-weight: 500;
+width: 60%;
+border-bottom: 2px solid #f08fd7;
+outline: none;
+margin-right: 20px;
+}
+
+.main_div .center_div .newBtn {
+width: 50px;
+height: 55px;
+background-color: #a01699 !important;
+color: white !important;
+box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+border-radius: 50% !important;
+}
+
+.main_div .center_div .newBtn:hover {
+color: #16a085 !important;
+background-color: #fff !important;
+}
+.MuiSvgIcon-root {
+width: 2rem !important;
+height: 2rem !important;
+}
+
+ol {
+margin-top: 30px;
+}
+
+ol li {
+padding-left: 0px;
+text-align: left;
+font-family: "Josefin Sans", sans-serif;
+font-size: 20px;
+font-weight: 500;
+min-height: 40px;
+display: flex;
+align-items: center;
+color:#e73abc ;
+text-transform: capitalize;
+list-style: none;
+}
+
+.todo_style {
+display: flex;
+flex-direction: row;
+justify-content: left;
+align-items: center;
+}
+
+.todo_style .deleteIcon {
+width: 25px;
+height: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #8566aa;
+border-radius: 50%;
+margin: 0 5px 0 35px;
+padding: 5px;
+color: aliceblue;
+box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.todo_style .deleteIcon:hover {
+background-color: transparent;
+color: crimson;
+box-shadow: 5px 5px 15px -5px rgba(255, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+.center_div {
+width: 55%;
+}
+
+.main_div .center_div .newBtn:hover {
+color: #16a085 !important;
+background-color: #fff !important;
+}
+
+/* .main*div .center_div .newBtn {
+/* margin-left: 5px; _/
+/_ min-height: 10px; _/
+border-radius: 50% !important;
+/_ width: 10px; \_/
+color: #fff;
+}
+} */
 }
