@@ -12,6 +12,7 @@ const [newItem, setNewItem] = useState([]);
     }
     const listOfItems = () => {
         setNewItem((preValue) => {
+            if(item>"")
             return [...preValue, item];
         });
         setItem("");
